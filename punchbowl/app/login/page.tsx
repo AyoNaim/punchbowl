@@ -10,7 +10,7 @@ import Link from 'next/link';
 import DesktopComponent from './Desktop';
 import MobileComponent from './Mobile';
 
-const Signin = () => {
+const login = () => {
   const [width, setWidth] = useState(0);
 
   useEffect(() => {
@@ -37,4 +37,4 @@ const Signin = () => {
   );
 }
 
-export default Signin;
+export default login;

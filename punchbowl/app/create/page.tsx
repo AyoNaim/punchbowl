@@ -10,8 +10,8 @@ import Link from 'next/link'
 import DesktopComponent from './DesktopComponent'
 import MobileComponent from './MobileComponent'
 
-const Signin = () => {
-  const [width, setwidth] = useState(window.innerWidth);
+const Create = () => {
+  const [width, setwidth] = useState(0);
   useEffect(() => {
     const handleResize = () => {
       setwidth(window.innerWidth);
@@ -30,4 +30,4 @@ const Signin = () => {
   )
 }
 
-export default Signin
+export default Create
