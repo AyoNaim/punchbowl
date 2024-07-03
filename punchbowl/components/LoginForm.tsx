@@ -6,12 +6,12 @@ import Link from 'next/link';
 
 
 const LoginForm = () => {
-  const supabase_url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const supabase_anon = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  const supabase_url = 'https://dkabkqkvvoiykaouhrvc.supabase.co';
+  const supabase_anon = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRrYWJrcWt2dm9peWthb3VocnZjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTg4OTg4MzMsImV4cCI6MjAzNDQ3NDgzM30.Zm5SUO2H4NYHbwi4XksMwWtJq7KO8YpiXFHaHj-89Mg';
   const supabase = createClient(
     supabase_url,
     supabase_anon
-  );
+  )
 
 const signin = async (formData: FormData) => {
     const email = formData.get("email") as string;
