@@ -19,8 +19,18 @@ const SignInForm = () => {
 
     const { error } = await supabase.auth.signUp({
       email: email,
-      password: password
+      password: password,
+      options: {
+        data: {
+          password: password
+        }
+      }
     });
+    if ( !error ) {
+      const { data, error } = await supabase
+        .from('profiles')
+        .insert([{ password: password }]);
+    }
     if (!error) {
       return redirect('./confirmation');
     } else  if (password != password_two ){
