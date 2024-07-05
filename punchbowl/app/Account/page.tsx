@@ -22,7 +22,7 @@ const Account = () => {
     setWidth(window.innerWidth);
 
     window.addEventListener('resize', handleResize);
-  
+    // remove event listener
     return () => {
       window.removeEventListener('resize', handleResize);
     };
