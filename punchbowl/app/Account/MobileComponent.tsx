@@ -16,7 +16,7 @@ const MobileComponent = () => {
         <div className='mt-10 flex items-center flex-col border border-opacity-65 rounded-sm w-[400px] h-[900px]'>
           <div className='w-10/12'>
           <div className='flex justify-center items-center mt-3'>
-          <p className='text-[30px] text-gray-600'>Sign up with Email</p>
+          <p className='text-[30px] text-gray-600'>Sign up</p>
           </div>
           <SignInForm />
           <div className='w-11/12 flex justify-center items-center ml-2 mt-2'>
