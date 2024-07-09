@@ -21,7 +21,7 @@ const NavMobile = () => {
             Categories
           </Button>
         </div>
-        <div className="flex justify-between items-center mr-2">
+        <div className="flex justify-between items-center mr-4">
           <Image src={"./logo.svg"} alt="logo" width={30} height={30} />
         </div>
         <div className="flex justify-between items-center gap-2">
