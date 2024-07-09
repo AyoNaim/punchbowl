@@ -15,7 +15,7 @@ const Signin = () => {
         <div className='mt-10 flex items-center flex-col border rounded-sm w-[400px] h-[600px]'>
           <div className='w-10/12'>
           <div className='flex justify-center items-center mt-3'>
-          <p className='text-[30px] text-gray-600'>Sign in</p>
+          <p className='text-[30px] text-gray-600'>Sign in with Email</p>
           </div>
           <LoginForm />
           </div>
